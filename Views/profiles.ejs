@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Profiles</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Profiles</title>
+  <style>
+  body {margin:0;}
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="/">Home</a></li>
+    <a href="/contacts">Contacts</a>
+    <a href="/groups">Groups</a>
+    <a class="active" href="/profiles">Profiles</a>
+    <a href="/addresses">Addresses</a>
+  </div>
     <h1>TABLE PROFILE</h1>
     <table border = "1">
       <thead>
@@ -47,13 +83,5 @@
     <input type="submit" value="Submit">
   </form>
   <h3><%=errorMsg%></h3>
-  <h4>Navigate to Another Path Here:</h4>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/contacts">View Contacts Database</a></li>
-    <li><a href="/groups">View Groups Database</a></li>
-    <li><a href="/profiles">View Profiles Database</a></li>
-    <li><a href="/addresses">View Addresses Database</a></li>
-  </ul>
   </body>
 </html>
